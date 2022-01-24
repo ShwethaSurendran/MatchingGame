@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MatchCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heJ-NI-UdA">
+                                <rect key="frame" x="814" y="30" width="0.0" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hvQ-Jt-DAh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skk-3D-nEz">
+                                <rect key="frame" x="814" y="80" width="0.0" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aS1-0n-DLy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OEo-ca-FaJ">
+                                <rect key="frame" x="5" y="150" width="824" height="1019"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="i98-Gq-AMq">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="q6c-Mv-Ddp" customClass="CardCell" customModule="MatchCards" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oIe-bH-Bed">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6rw-hh-rx7">
+                                                    <rect key="frame" x="2" y="2" width="124" height="124"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionMarkImage" translatesAutoresizingMaskIntoConstraints="NO" id="6CU-hy-4rJ">
+                                                    <rect key="frame" x="2" y="2" width="124" height="124"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="6rw-hh-rx7" secondAttribute="bottom" constant="2" id="9GW-XD-qSC"/>
+                                                <constraint firstItem="6CU-hy-4rJ" firstAttribute="leading" secondItem="oIe-bH-Bed" secondAttribute="leading" constant="2" id="Cno-Qm-ilU"/>
+                                                <constraint firstAttribute="bottom" secondItem="6CU-hy-4rJ" secondAttribute="bottom" constant="2" id="MpD-0b-FcC"/>
+                                                <constraint firstItem="6rw-hh-rx7" firstAttribute="leading" secondItem="oIe-bH-Bed" secondAttribute="leading" constant="2" id="V3s-r4-Z4d"/>
+                                                <constraint firstItem="6CU-hy-4rJ" firstAttribute="top" secondItem="oIe-bH-Bed" secondAttribute="top" constant="2" id="cLG-7V-DQA"/>
+                                                <constraint firstAttribute="trailing" secondItem="6rw-hh-rx7" secondAttribute="trailing" constant="2" id="cPx-ml-Cvd"/>
+                                                <constraint firstAttribute="trailing" secondItem="6CU-hy-4rJ" secondAttribute="trailing" constant="2" id="jjJ-4s-PXu"/>
+                                                <constraint firstItem="6rw-hh-rx7" firstAttribute="top" secondItem="oIe-bH-Bed" secondAttribute="top" constant="2" id="v9Z-OX-sfN"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="flippedCardImageView" destination="6rw-hh-rx7" id="0e8-Vj-8kc"/>
+                                            <outlet property="initialCardImageView" destination="6CU-hy-4rJ" id="3HX-it-5mO"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5jL-ys-qhg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Y1t-Eh-qbZ"/>
+                                </connections>
+                            </collectionView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wf3-cP-E6C">
+                                <rect key="frame" x="125" y="451" width="584" height="292"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4b-Qn-9aF">
+                                        <rect key="frame" x="5" y="100.5" width="574" height="91"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="You have successfully completed this game! Tap to resume.">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="35" name="MarkerFelt-Wide"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.37059968710000002" green="0.739207685" blue="0.83923286200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="H4b-Qn-9aF" firstAttribute="centerX" secondItem="wf3-cP-E6C" secondAttribute="centerX" id="715-Jg-ocK"/>
+                                    <constraint firstItem="H4b-Qn-9aF" firstAttribute="leading" secondItem="wf3-cP-E6C" secondAttribute="leading" constant="5" id="I5U-lB-OFv"/>
+                                    <constraint firstAttribute="width" secondItem="wf3-cP-E6C" secondAttribute="height" multiplier="1:0.5" id="Nj8-fT-C7l"/>
+                                    <constraint firstItem="H4b-Qn-9aF" firstAttribute="centerY" secondItem="wf3-cP-E6C" secondAttribute="centerY" id="aBK-Qr-O2a"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="heJ-NI-UdA" secondAttribute="trailing" constant="20" id="2d3-W9-Rp4"/>
+                            <constraint firstItem="Skk-3D-nEz" firstAttribute="leading" secondItem="heJ-NI-UdA" secondAttribute="leading" id="5sG-QX-5tm"/>
+                            <constraint firstItem="wf3-cP-E6C" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6nB-ld-Uct"/>
+                            <constraint firstItem="heJ-NI-UdA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="8lt-4G-cOi"/>
+                            <constraint firstItem="wf3-cP-E6C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A08-nS-V22"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OEo-ca-FaJ" secondAttribute="bottom" constant="5" id="LMi-zt-GZ4"/>
+                            <constraint firstItem="heJ-NI-UdA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="NWe-hA-ykM"/>
+                            <constraint firstItem="Skk-3D-nEz" firstAttribute="top" secondItem="heJ-NI-UdA" secondAttribute="bottom" constant="10" id="NpL-wO-W4o"/>
+                            <constraint firstItem="Skk-3D-nEz" firstAttribute="trailing" secondItem="heJ-NI-UdA" secondAttribute="trailing" id="Oyx-iw-1Gb"/>
+                            <constraint firstItem="OEo-ca-FaJ" firstAttribute="top" secondItem="Skk-3D-nEz" secondAttribute="bottom" constant="30" id="Qjc-Y6-gEK"/>
+                            <constraint firstItem="OEo-ca-FaJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="RQm-qk-VO8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OEo-ca-FaJ" secondAttribute="trailing" constant="5" id="tJQ-dI-vvb"/>
+                            <constraint firstItem="wf3-cP-E6C" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="tbP-yW-jZM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="OEo-ca-FaJ" id="eoD-PO-84x"/>
+                        <outlet property="gameCompletedAlertView" destination="wf3-cP-E6C" id="adr-rV-xRD"/>
+                        <outlet property="movesLabel" destination="Skk-3D-nEz" id="hIf-S0-2aC"/>
+                        <outlet property="scoreLabel" destination="heJ-NI-UdA" id="gAF-OH-OeJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.784172661870514" y="103.51758793969849"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="questionMarkImage" width="496.5" height="494"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
